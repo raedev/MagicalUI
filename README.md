@@ -1,0 +1,2 @@
+# MagicalUI
+Android UI framework
