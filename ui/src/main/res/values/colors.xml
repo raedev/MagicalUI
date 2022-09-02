@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--黑色-->
+    <color name="black">#FF000000</color>
+    <!--白色-->
+    <color name="white">#FFFFFFFF</color>
+    <!--主色调-->
+    <color name="colorPrimary">#FF2E74FF</color>
+    <!--辅助色-->
+    <color name="secondPrimary">#FF00B9FE</color>
+    <!--成功色-->
+    <color name="successPrimary">#FF02D49A</color>
+    <!--警告色-->
+    <color name="warnPrimary">#FFFD9C52</color>
+    <!--危险色-->
+    <color name="dangerPrimary">#FFFD5B31</color>
+    <!--主标题色-->
+    <color name="textPrimary">#FF1E1E1E</color>
+    <!--标题2-->
+    <color name="h2">#FF6C6C6C</color>
+    <!--标题3-->
+    <color name="h3">#FF989898</color>
+    <!--标题4-->
+    <color name="h4">#FFB5B5B5</color>
+    <!--主提示颜色-->
+    <color name="hintPrimary">#FF989898</color>
+    <!--分割线色-->
+    <color name="dividerPrimary">#E8E8E8</color>
+    <!--主背景颜色-->
+    <color name="backgroundPrimary">#F6F7F9</color>
+    <!--图标颜色-->
+    <color name="iconPrimary">#FF174AB3</color>
+    <!--按钮主色-->
+    <color name="buttonPrimary">@color/colorPrimary</color>
+    <!--按钮选中颜色-->
+    <color name="buttonPrimarySelected">#CC2E74FF</color>
+    <!-- 取消按钮颜色-->
+    <color name="buttonCancel">#E8E8E8</color>
+    <!-- 取消按钮按下颜色-->
+    <color name="buttonCancelPressed">#F6F7F9</color>
+</resources>

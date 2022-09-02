@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--不需要阴影-->
+    <dimen name="mtrl_btn_elevation" tools:override="true">0dp</dimen>
+    <dimen name="mg_button_radius">4dp</dimen>
+    <dimen name="mg_alert_dialog_card_radius">12dp</dimen>
+    <dimen name="mg_bottom_sheet_card_radius">18dp</dimen>
+    <dimen name="mg_bottom_sheet_card_horizontal">18dp</dimen>
+    <dimen name="h2">14sp</dimen>
+    <dimen name="h3">12sp</dimen>
+</resources>

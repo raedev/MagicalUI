@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mg_confirm">确定</string>
+    <string name="mg_cancel">取消</string>
+    <string name="mg_bottom_sheet_alert_dialog_title">提示</string>
+    <string name="mg_loading">正在加载，请稍后···</string>
+    <string name="mg_empty_message">抱歉，暂无数据</string>
+    <string name="mg_retry_message">点击屏幕重新加载</string>
+</resources>

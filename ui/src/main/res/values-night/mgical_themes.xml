@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MagicalTheme" parent="Theme.MaterialComponents.DayNight" />
+
+    <style name="MagicalTheme.AppTheme" />
+
+    <style name="MagicalTheme.Night" />
+
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--按下颜色-->
+    <attr name="mg_color_pressed" format="color" />
+    <!--不可用颜色-->
+    <attr name="mg_color_disable" format="color" />
+
+
+    <declare-styleable name="MagicalViewPager" parent="ViewPager">
+        <attr name="mg_fixed" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="MagicalBottomLayout">
+        <!--正常展示高度-->
+        <attr name="mg_peek_height" format="dimension" />
+        <!--最小化高度-->
+        <attr name="mg_minimize_height" format="dimension" />
+        <!--是否启用最小化-->
+        <attr name="mg_enable_minimize" format="boolean" />
+        <!--是否启用隐藏-->
+        <attr name="mg_hideable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MagicalTabLayout" parent="TabLayout">
+        <attr name="tabMarginEnd" format="dimension" />
+    </declare-styleable>
+
+    <!--按钮属性-->
+    <declare-styleable name="MagicalButton" parent="MaterialButton">
+        <!--按下颜色-->
+        <attr name="mg_color_pressed" />
+        <!--不可用颜色-->
+        <attr name="mg_color_disable" />
+        <!--加载中文本-->
+        <attr name="mg_loading_text" format="string" />
+    </declare-styleable>
+
+
+</resources>

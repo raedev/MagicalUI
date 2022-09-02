@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/mg_bottom_sheet_card_horizontal"
+    android:paddingTop="14dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mg_bottom_sheet_alert_dialog_title"
+        android:textColor="@color/textPrimary"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@android:id/message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="fill"
+        android:layout_weight="1"
+        android:lineSpacingMultiplier="1.24"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:scrollbars="none"
+        android:text="@string/mg_confirm"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.magical.ui.widget.MagicalButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:minWidth="60dp"
+            android:text="@string/mg_cancel"
+            android:textColor="@color/hintPrimary"
+            android:textSize="14sp" />
+
+        <com.magical.ui.widget.MagicalButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:minWidth="80dp"
+            android:text="@string/mg_confirm"
+            android:textColor="@color/buttonPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

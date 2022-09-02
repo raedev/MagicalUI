@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MagicalTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <style name="MagicalTheme.AppTheme">
+        <item name="materialButtonStyle">@style/MagicalButton</item>
+    </style>
+
+
+    <style name="MagicalTheme.AppTheme.Translucent">
+        <!--沉浸式状态栏-->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!--对话框-->
+    <style name="MagicalDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="materialButtonStyle">@style/MagicalButton</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <!--警告对话框-->
+    <style name="MagicalDialog.Alert">
+        <item name="android:windowBackground">@drawable/mg_bg_alert_dialog_card</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!--底部对话框-->
+    <style name="MagicalAlertBottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="materialButtonStyle">@style/MagicalButton</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="bottomSheetStyle">@style/MagicalBottomSheetModal</item>
+    </style>
+
+    <style name="MagicalBottomSheetModal" parent="@style/Widget.MaterialComponents.BottomSheet">
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+
+    <!--按钮样式-->
+    <style name="MagicalButton" parent="Widget.MaterialComponents.Button">
+        <!--去除水波纹-->
+        <item name="backgroundTint">@color/mg_btn_bg_color_selector</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="cornerRadius">@dimen/mg_button_radius</item>
+    </style>
+
+    <!--取消按钮样式-->
+    <style name="MagicalButton.Cancel" parent="MagicalButton">
+        <item name="backgroundTint">@color/mg_btn_cancel_color_selector</item>
+        <item name="android:textColor">@color/hintPrimary</item>
+    </style>
+
+
+</resources>
