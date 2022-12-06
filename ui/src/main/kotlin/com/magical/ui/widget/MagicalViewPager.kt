@@ -23,6 +23,8 @@ class MagicalViewPager(context: Context, attrs: AttributeSet?) :
 
     constructor(context: Context) : this(context, null)
 
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : this(context, attrs)
+
     init {
         val typedArray =
             context.obtainStyledAttributes(attrs, R.styleable.MagicalViewPager)

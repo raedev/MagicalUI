@@ -11,9 +11,11 @@ import android.util.Log
 object MagicalUtils {
 
     internal fun debug(msg: String) {
-        Log.d("MagicalUI", msg)
+        Log.d("MagicalUI.rae", msg)
     }
 
-
+    internal fun warn(msg: String) {
+        Log.w("MagicalUI.rae", msg)
+    }
 
 }

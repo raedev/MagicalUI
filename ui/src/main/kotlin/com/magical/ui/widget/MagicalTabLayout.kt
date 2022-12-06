@@ -18,6 +18,8 @@ class MagicalTabLayout(context: Context, attrs: AttributeSet?) :
 
     constructor(context: Context) : this(context, null)
 
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : this(context, attrs)
+
     private var tabMarginEnd: Float = -1F
 
     init {
