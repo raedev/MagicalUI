@@ -6,6 +6,8 @@
     <color name="white">#FFFFFFFF</color>
     <!--主色调-->
     <color name="colorPrimary">#FF2E74FF</color>
+    <!--暗黑主色调-->
+    <color name="colorPrimaryDark">#1F61E4</color>
     <!--辅助色-->
     <color name="secondPrimary">#FF00B9FE</color>
     <!--成功色-->

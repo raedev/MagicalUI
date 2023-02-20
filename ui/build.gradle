@@ -6,11 +6,11 @@ plugins {
 
 android {
     namespace 'com.magical.ui'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         minSdk 21
-        targetSdk 32
+        targetSdk 33
     }
 
     buildTypes {
@@ -28,14 +28,10 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    api 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    api 'com.google.android.material:material:1.8.0'
     api 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-    // glide
-    def glide = '4.14.2'
-    api "com.github.bumptech.glide:glide:$glide"
-    kapt "com.github.bumptech.glide:compiler:$glide"
 }
 
 // 发布到Maven库

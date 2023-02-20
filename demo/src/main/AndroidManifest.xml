@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raedev.demo">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.WaiYeXunChaGanZhi">
+        android:theme="@style/Theme.Demo">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".bottomsheet.BottomSheetDemoActivity"
+            android:exported="true"
+            android:label="BottomSheet示例">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
+        <activity
+            android:name=".bottomsheet.BasicBottomSheetActivity"
+            android:exported="true"
+            android:label="基础示例" />
+        <activity
+            android:name=".bottomsheet.RecycleViewBottomSheetActivity"
+            android:exported="true"
+            android:label="下拉刷新列表示例" />
     </application>
 
 </manifest>

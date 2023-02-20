@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="MagicalTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+    <style name="MagicalTheme" parent="Theme.MaterialComponents.DayNight" />
 
     <style name="MagicalTheme.AppTheme">
         <item name="materialButtonStyle">@style/MagicalButton</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- 亮色ActionBar -->
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
+        <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
     </style>
 
 

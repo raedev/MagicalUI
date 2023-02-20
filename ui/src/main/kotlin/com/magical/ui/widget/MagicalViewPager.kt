@@ -5,6 +5,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
 import androidx.viewpager.widget.ViewPager
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.magical.ui.R
 
 /**
@@ -20,6 +21,8 @@ class MagicalViewPager(context: Context, attrs: AttributeSet?) :
      * 是否固定不滑动
      */
     var fixed: Boolean = false
+
+    private var nestedScrollingParent: MagicalBottomSheetLayout? = null
 
     constructor(context: Context) : this(context, null)
 
@@ -46,7 +49,6 @@ class MagicalViewPager(context: Context, attrs: AttributeSet?) :
         return if (fixed) false else super.onTouchEvent(ev)
     }
 
-
     override fun setCurrentItem(item: Int) {
         if (fixed) {
             super.setCurrentItem(item, false)
@@ -54,4 +56,23 @@ class MagicalViewPager(context: Context, attrs: AttributeSet?) :
         }
         super.setCurrentItem(item)
     }
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        nestedScrollingParent = MagicalBottomSheetLayout.findCurrentAsParent(this)
+        nestedScrollingParent?.let {
+            this.isNestedScrollingEnabled = true
+        }
+    }
+
+    override fun onDetachedFromWindow() {
+        super.onDetachedFromWindow()
+        nestedScrollingParent = null
+    }
+
+    override fun isNestedScrollingEnabled(): Boolean {
+        return nestedScrollingParent?.behavior?.state != BottomSheetBehavior.STATE_HALF_EXPANDED
+    }
+
+
 }

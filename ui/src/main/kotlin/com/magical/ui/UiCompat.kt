@@ -4,14 +4,12 @@ import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AnimationUtils
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.AnimRes
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.LifecycleOwner
-import com.bumptech.glide.Glide
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.magical.ui.dialog.MagicalAlertDialogFragment
 import com.magical.ui.dialog.MagicalBottomSheetDialogFragment
@@ -200,20 +198,6 @@ object UiCompat {
 
     // endregion
 
-    // region图片加载
-
-    /**
-     * 展示图片
-     * @param url 图片路径
-     */
-    fun displayImage(imageView: ImageView, url: String) {
-        Glide.with(imageView)
-            .asBitmap()
-            .load(url)
-            .into(imageView)
-    }
-
-    // endregion
 }
 
 
